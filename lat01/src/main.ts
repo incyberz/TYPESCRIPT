@@ -14,7 +14,12 @@ class Coder {
     this.age = age
     this.lang = lang
   }
+
+  public getAge(){
+    return `Hello my age is ${this.age} years`
+  }
 }
 
 const Insho = new Coder('Insho','Rock',45,'Typescript')
-
+// console.log(Insho.age);
+console.log(Insho.getAge());
