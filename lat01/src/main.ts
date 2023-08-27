@@ -1,14 +1,12 @@
 class Coder {
-  name: string   
-  music: string   
-  age: number   
-  lang: string  
+
+  secondLang!: string
   
   constructor(
-    name:string,
-    music:string,
-    age:number,
-    lang:string,
+    public readonly name:string,
+    public music:string,
+    private age:number,
+    protected lang:string = 'Typescript',
     
   ){
     this.name = name
@@ -17,4 +15,6 @@ class Coder {
     this.lang = lang
   }
 }
+
+const Insho = new Coder('Insho','Rock',45,'Typescript')
 
