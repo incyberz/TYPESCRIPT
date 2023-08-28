@@ -17,3 +17,16 @@ class Coder {
 const Insho = new Coder('Insho', 'Rock', 45, 'Typescript');
 // console.log(Insho.age);
 console.log(Insho.getAge());
+class webDev extends Coder {
+    constructor(computer, name, music, age) {
+        super(name, music, age);
+        this.computer = computer;
+        this.computer = computer;
+    }
+    getLang() {
+        return `My language is ${this.lang}`;
+    }
+}
+let Ahmad = new webDev('Laptop', 'Ahmad', 'nasyid', 34);
+// console.log(Ahmad.lang);
+console.log(Ahmad.getLang());
