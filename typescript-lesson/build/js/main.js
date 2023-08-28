@@ -28,5 +28,6 @@ class webDev extends Coder {
     }
 }
 let Ahmad = new webDev('Laptop', 'Ahmad', 'nasyid', 34);
+console.log(Ahmad.music);
 // console.log(Ahmad.lang);
 console.log(Ahmad.getLang());
